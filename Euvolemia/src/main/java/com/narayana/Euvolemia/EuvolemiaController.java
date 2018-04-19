@@ -17,7 +17,7 @@ public class EuvolemiaController {
 	@Autowired
 	EuvolemiaRepository euvolemiaRepository;
 	
-	@RequestMapping("/Euvolemia/{euvolemicSymptoms}")
+	@RequestMapping("/euvolemia/{euvolemicSymptoms}")
 	public String Euvolemia(@PathVariable("euvolemicSymptoms") String euvolemicSymptoms) {
 		logger.info("accounts-changed byId() invoked: " + euvolemicSymptoms);
 		String retVal = euvolemiaRepository.geteuvolmia(euvolemicSymptoms);
